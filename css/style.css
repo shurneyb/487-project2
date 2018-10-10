@@ -1,0 +1,26 @@
+.timeline{
+  background: #dddddd;
+}
+
+#text1{
+  flex-basis: 80%;
+}
+
+.timeline, .modal{
+  width: 300px;
+  height: 200px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.modal{
+  background: blue;
+  color: white;
+  display: none;
+}
