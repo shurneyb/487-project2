@@ -1,26 +1,91 @@
-.timeline{
-  background: #dddddd;
-}
 
-#text1{
-  flex-basis: 80%;
-}
+/* Global */
+  body{
+    background: #333;
+    margin: 0;
+  }
 
-.timeline, .modal{
-  width: 300px;
-  height: 200px;
-}
+  .flex-center{
+    display: flex!important; /* override slick */
+    justify-content: center;
+    align-items: center;
+  }
 
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-}
+  #heading{
+    color: #fff;
+  }
 
-.modal{
-  background: blue;
-  color: white;
-  display: none;
-}
+  .emphasized{
+    font-weight: bold;
+  }
+
+  h2{
+    margin-top: 5px;
+  }
+
+  a:focus {
+    outline: none !important; /* removed blue outline around divs when clicked */
+  }
+/* End Global */
+
+/* Slides */
+
+  .slide-container{
+    height: 80vh;
+    width: 75vw;
+    border: 2px solid #111;
+    background: #eeeeee;
+
+  }
+  .slide{
+    height: 100%;
+    width: 100%;
+  }
+
+  .instrument-slide{
+    display: flex!important; /* override slick */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .slick-list, .slick-track{
+    height: 100%;
+  }
+
+/* End Slides */
+
+/* img */
+  .content-box{
+    height: 90%;
+    width: 45%;
+    overflow: auto;
+  }
+
+  .img{
+    max-width: 90%;
+    max-height: 98%;
+  }
+/* end img */
+
+/* quiz */
+  #quiz-home-btn:hover{
+    cursor: pointer;
+  }
+
+  #quiz-area{
+    height: 90%;
+    width: 90%!important;
+    position: absolute;
+    top: 0;
+  }
+
+  #questions{
+    width: 75%;
+    margin: auto;
+  }
+
+  .answers li a{
+    background: #6d6dff;
+    color: #fff;
+  }
+/* end quiz*/
