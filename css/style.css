@@ -26,6 +26,10 @@
   a:focus {
     outline: none !important; /* removed blue outline around divs when clicked */
   }
+
+  .center{
+    text-align: center;
+  }
 /* End Global */
 
 /* Slides */
@@ -111,3 +115,9 @@
     color: #fff;
   }
 /* end quiz*/
+
+/* Sources */
+  #sources-wrapper{
+    padding: 10px 20%;
+  }
+/* End Sources */
