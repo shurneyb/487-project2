@@ -1,8 +1,10 @@
 
 /* Global */
   body{
-    background: #333;
+    background: rgb(65, 21, 21);
     margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: .95em;
   }
 
   .flex-center{
@@ -30,6 +32,10 @@
   .center{
     text-align: center;
   }
+
+  .mobile-h2{
+    display: none;
+  }
 /* End Global */
 
 /* Slides */
@@ -38,7 +44,7 @@
     height: 80vh;
     width: 75vw;
     border: 2px solid #111;
-    background: #eeeeee;
+    background: linear-gradient(rgb(255, 255, 223), #fff);
 
   }
   .slide{
@@ -56,11 +62,15 @@
     height: 100%;
   }
 
+  #slick-slide-control00::before, #slick-slide-control01::before, #slick-slide-control02::before, #slick-slide-control03::before, #slick-slide-control04::before, #slick-slide-control05::before, #slick-slide-control06::before, #slick-slide-control07::before{
+    color: #fff;
+  }
+
 /* End Slides */
 
 /* img */
   .content-box{
-    height: 90%;
+    height: 92%;
     width: 45%;
     overflow: auto;
   }
@@ -77,18 +87,26 @@
 
   .popup-youtube{
     max-height: 100%;
+    position: relative;
+    text-decoration: none;
+    text-align: center; 
   }
 
   .img{
     height: inherit;
     max-height: 99%;
     max-width: 100%;
+    margin: auto;
   }
 
   .img-holder{
     height:inherit;
-    max-height: 100%;
+    max-height: 85%;
     max-width: 100%;
+  }
+
+  .click{
+    color: #000;
   }
 
 /* end img */
@@ -101,8 +119,6 @@
   #quiz-area{
     height: 90%;
     width: 90%!important;
-    position: absolute;
-    top: 0;
   }
 
   #questions{
@@ -114,10 +130,70 @@
     background: #6d6dff;
     color: #fff;
   }
+
+  .quiz-container{
+    margin: 0;
+    padding: 0;
+  }
 /* end quiz*/
 
 /* Sources */
   #sources-wrapper{
     padding: 10px 20%;
+    overflow: auto;
+  }
+
+  #sources-wrapper p{
+    font-size: .8em;
   }
 /* End Sources */
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .instrument-slide{
+    flex-direction: column;
+  }
+  .click{
+    margin-bottom: 30px;
+  }
+  #sources-wrapper{
+    padding: 15px;
+  }
+  #sources-wrapper p{
+    max-width: 90%;
+    margin: 3px;
+  }
+  .slide{
+    overflow: auto;
+  }
+  .mobile-h2{
+    display: block;
+    margin: 5px 0;
+  }
+  .desktop-h2{
+    display: none;
+  }
+  #heading{
+    margin: .67em;
+  }
+  .content-box{
+    width: 90%;
+  }
+  .text-wrapper{
+    margin: 20px 0;
+  }
+  #quiz-header{
+    font-size: .8em;
+  }
+  .question{
+    font-size: .8em;
+  }
+  .slide{
+    border: 2px solid #111;
+    background: linear-gradient(rgb(255, 255, 223), #fff);
+  }
+  .img-wrapper{
+    margin-bottom: 30px;
+  }
+}
+/* End Mobile */
