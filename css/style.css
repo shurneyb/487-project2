@@ -61,10 +61,32 @@
     overflow: auto;
   }
 
-  .img{
-    max-width: 90%;
-    max-height: 98%;
+  .img-wrapper{
+    height: 98%;
+    overflow: unset;
   }
+
+  .contain{
+    max-width: 99%;
+    max-height: 99%;
+  }
+
+  .popup-youtube{
+    max-height: 100%;
+  }
+
+  .img{
+    height: inherit;
+    max-height: 99%;
+    max-width: 100%;
+  }
+
+  .img-holder{
+    height:inherit;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
 /* end img */
 
 /* quiz */
