@@ -188,10 +188,6 @@
   .question{
     font-size: .8em;
   }
-  .slide{
-    border: 2px solid #111;
-    background: linear-gradient(rgb(255, 255, 223), #fff);
-  }
   .img-wrapper{
     margin-bottom: 30px;
   }
